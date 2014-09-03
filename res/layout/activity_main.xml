@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/Foward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="Foward" />
+
+    <Button
+        android:id="@+id/Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Foward"
+        android:layout_toLeftOf="@+id/Foward"
+        android:text="Left" />
+
+    <Button
+        android:id="@+id/Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Foward"
+        android:layout_toRightOf="@+id/Foward"
+        android:text="Right" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Left"
+        android:layout_centerHorizontal="true"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Right"
+        android:layout_alignBottom="@+id/Right"
+        android:layout_centerHorizontal="true"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/LeftTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Back"
+        android:layout_toLeftOf="@+id/Connect"
+        android:text="LeftTurn" />
+
+    <Button
+        android:id="@+id/RightTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Back"
+        android:layout_toRightOf="@+id/Connect"
+        android:text="RightTurn" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="CyberDolly" />
+
+    <Button
+        android:id="@+id/RightFoward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Right"
+        android:layout_alignLeft="@+id/RightTurn"
+        android:text="RightFoward" />
+
+    <Button
+        android:id="@+id/LeftFoward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Left"
+        android:layout_alignRight="@+id/LeftTurn"
+        android:text="LeftFoward" />
+
+    <TextView
+        android:id="@+id/x_axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LeftTurn"
+        android:layout_below="@+id/RightTurn"
+        android:layout_marginTop="45dp"
+        android:text="x_axis" />
+
+    <TextView
+        android:id="@+id/y_axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/x_axis"
+        android:layout_alignBottom="@+id/x_axis"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/x_axis"
+        android:text="y_axis" />
+
+    <TextView
+        android:id="@+id/z_axis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/y_axis"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/y_axis"
+        android:text="z_axis" />
+
+</RelativeLayout>
